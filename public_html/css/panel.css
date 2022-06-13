@@ -1,0 +1,297 @@
+* {
+    font-family: vazir;
+}
+
+body{
+    direction: rtl;
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+body {
+    background-color: #f5f6fa;
+}
+
+/*navbar*/
+.sidebar {
+    height: 100vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, .9)), url("../images/Mountain.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: scroll;
+}
+
+.bottom-border {
+    border-bottom: 1px groove #eee;
+}
+
+.sidebar-link:hover {
+    background-color: #a0a5b9;
+    border-radius: 5px;
+}
+
+.sidebar-link {
+    transition: all .4s;
+}
+
+.sidebar-links:hover {
+    background-color: #cbd0e7;
+    border-radius: 5px;
+}
+
+.sidebar-links {
+    transition: all .4s;
+    font-size: 14px;
+}
+
+.current {
+    background-color: #713bdb;
+    border-radius: 7px;
+    box-shadow: 2px 5px 10px #9fa4b8;
+    transition: all .3s;
+}
+
+.current:hover {
+    border-radius: 7px;
+    box-shadow: 1px 4px 10px #111;
+    transform: translateY(-3px);
+}
+
+.search-input {
+    background: transparent;
+    border: none;
+    border-radius: 0 !important;
+    border-bottom: 1px solid #999;
+    transition: all .4s;
+    color: white !important;
+}
+
+.search-input:focus {
+    background: transparent;
+    box-shadow: none;
+    border-bottom: 1px solid #dc3545;
+}
+
+.search-button {
+    border-radius: 50%;
+    padding: 10px 15px;
+    transition: all .3s;
+}
+
+.search-button:hover {
+    background: #eee;
+    transform: translatey(-3px);
+}
+
+.icon-parent {
+    position: relative;
+}
+
+.a {
+    padding-right: 16px !important;
+}
+
+.icon-bullet {
+    position: absolute;
+    top: -10px;
+    right: -5px;
+    padding: 3px;
+    width: 22px;
+    font-size: 10px;
+    background-color: #f9b115;
+    border-radius: 100%;
+    color: white !important;
+    font-weight: bold;
+}
+
+.icon-bullets {
+    position: absolute;
+    top: -1px;
+    right: 5px;
+    padding: 3px;
+    width: 22px;
+    font-size: 10px;
+    background-color: #e55353;
+    border-radius: 100%;
+    color: white !important;
+    font-weight: bold;
+}
+
+.drop-nav {
+    position: absolute;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    top: 60px;
+    right: 15px;
+    width: 180px;
+    background: #ffffff;
+    z-index: 10;
+    border-radius: 3px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s;
+}
+
+.drop-profile {
+    background-color: #212529;
+    border-radius: 5px 5px 0 0;
+    padding: 10px;
+}
+
+.drop-profile p {
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+.drop-nav a {
+    font-size: 13px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #9fa4b8;
+}
+
+.hover-nav {
+    width: 190px;
+}
+
+.hover-nav a {
+    cursor: pointer !important;
+}
+
+.hover-nav:hover .drop-nav {
+    visibility: visible;
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        position: static;
+        height: auto;
+    }
+
+    .top-navbar {
+        position: static;
+    }
+}
+
+/*end of navbar*/
+/*card*/
+.shop {
+    color: #ff8c56;
+    background: #e3e7f1;
+    border-radius: 100%;
+    padding: 15px;
+}
+
+.card-common {
+    box-shadow: 1px 2px 5px #bcc2d6;
+    transition: all .3s;
+}
+
+.card-common:hover {
+    box-shadow: 2px 3px 15px #999;
+    transform: translateY(-1px);
+
+}
+
+/*end of card*/
+
+/*postage*/
+table th, td {
+    text-align: center;
+}
+
+table td {
+    font-size: 13px;
+    padding: 8px !important;
+}
+
+.fa-trash-alt {
+    color: #eb4d55;
+}
+
+.fa-edit {
+    color: #50d890;
+}
+
+.fa-trash-alt {
+    color: #eb4d55;
+}
+
+.fa-edit {
+    color: #50d890;
+}
+
+.head-postage {
+    background-color: #c6cbef;
+    padding: 8px;
+    border-radius: 10px 10px 0 0;
+
+}
+
+.head-postage-1 {
+    background-color: #c6cbef;
+    padding: 5px;
+    color: #6f42c1;
+
+}
+
+.border-postage {
+    border: 1px solid #d8dff3;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.button-postage button {
+    background-color: #713bdb;
+    color: white;
+}
+
+.button-postage button:hover {
+    background-color: #becbff;
+    color: #0f0a3c;
+}
+
+.button-postage-time {
+    background-color: #d195f9 !important;;
+    color: white;
+}
+
+.button-postage-time:hover {
+    background-color: #e8d3ff !important;;
+    color: #0f0a3c;
+}
+
+.head-postage p {
+    margin: 0;
+    color: #6f42c1;
+}
+
+.text-card {
+    font-weight: bold;
+    font-size: 16px;
+    color: #000;
+}
+
+.text-card h4 {
+    color: #ffbd69;
+}
+
+input {
+    font-size: 15px !important;
+}
+
+.orders-fee label {
+    font-size: 13px;
+}
+
+@media screen and (max-width: 550px ) {
+    .font-postage {
+        font-size: 12px;
+        font-weight: bold;
+    }
+}
+
+/*end of postage*/
